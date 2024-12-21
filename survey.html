@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SURVEY FORM</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+   
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Kindly fill out this survey form to help us improve</p>
+    <form id="survey-form">
+      <label id="name-label">Name
+        <input class="identity" id="name" type="text" required placeholder="Enter your name" />
+      </label>
+
+      <label id="email-label">Email 
+        <input class="identity" id="email" type="email" required placeholder="Enter your email" />
+      </label>
+
+      <label id="number-label">Age
+        <input class="identity" id="number" type="number" required  min="0" max="9" placeholder="Age" />
+      </label>
+        <legend>which best describe your occupation</legend>
+        <select id="dropdown">
+        <option></option>
+        <option>Employed</option>
+        <option>Unemployed</option>
+        <option>Student</option>
+      </select>
+    <label type="radio" value="dropdown1"  name="dropdown">Will you recommend us to a freind ?<input  class="button" type="radio" value="dropdown1" name="dropdown" />yes
+    <input class="button" type="radio" value="dropdown2" name="dropdown" />no
+    </label>
+    
+
+
+      <label for="improve" value="checkbox" type="checkbox">what will you like us to improve
+        <input class="check" id="improve" type="checkbox" value="checkbox1" />Front-end Projects
+      </label>
+      <label>
+        <input class="check" type="checkbox" value="checkbox2" />Back-end Projects
+      </label>
+    
+      
+      <textarea>
+      </textarea>
+      <button id="submit">submit</button>
+
+    </form>
+   
+  </body>
